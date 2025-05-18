@@ -1,0 +1,41 @@
+INF1038 - Aprendizado Automático
+Professora: Karla Figueiredo
+Alunos: David Wolff & Miguel Mendes
+
+Trabalho: Análise de Decision Tree na base de dados German Credit
+
+----------------------------------------
+MODELO BASE
+Acurácia: 0.66
+- Recall "bad": 0.48
+- Recall "good": 0.74
+
+Conclusão: Modelo inicial mostra viés para a classe majoritária ("good"). Baixo desempenho para "bad".
+
+----------------------------------------
+MODELO COM LIMPEZA
+Acurácia: 0.71
+- Recall "bad": 0.51
+- Recall "good": 0.80
+
+Conclusão: Tratamento de valores ausentes melhora o equilíbrio e acurácia geral.
+
+----------------------------------------
+MODELO COM NORMALIZAÇÃO
+Acurácia: 0.71
+- Recall "bad": 0.52
+- Recall "good": 0.79
+
+Conclusão: Sem efeito prático em DT, como esperado (Decision Tree é insensível à escala).
+
+----------------------------------------
+MODELO COM DISCRETIZAÇÃO
+Acurácia: 0.63
+- Recall "bad": 0.43
+- Recall "good": 0.71
+
+Conclusão: Discretização reduziu desempenho. Binning não ajudou neste cenário.
+
+----------------------------------------
+
+Resumo: A limpeza de dados foi a única técnica de pré-processamento que melhorou significativamente os resultados.
